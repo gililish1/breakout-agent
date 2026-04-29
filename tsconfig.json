@@ -1,9 +1,6 @@
 {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -12,6 +9,7 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
@@ -27,11 +25,5 @@
     "**/*.ts",
     "**/*.tsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
-{
-  "compilerOptions": {
-    "ignoreDeprecations": "6.0"
-  }
+  "exclude": ["node_modules"]
 }
